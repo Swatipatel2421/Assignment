@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .section{
+        margin: 0 auto;
+        border: 1px solid black;
+       background-image:url(./assesment/bootstrap/img/city.webp);
+       width:1200px;
+       height: 700px;
+       background-attachment: fixed;
+       }
+       form{
+        margin-top: 99px;
+       }
+        .first {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+        }
+      #date{
+        margin: 10px 0 0 90px;
+        padding: 5px;
+      }
+      #prson{
+        margin:10px 0 0 0;
+        padding: 5px;
+      }
+    #name{
+        margin: 10px 0 0 0;
+        padding: 5px 8px 5px 5px;
+    }
+    button{
+        margin: 20px 70px;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+<form id="drop" showitem()>
+    <div class="first" id="show_data">
+    <div>
+    <input type="datetime-local" name="" id="date">
+   </div>
+    <div>
+    total-person:-<input type="text" id="prson" >
+</div>
+<div>
+    Name:- <input type="text" name="" id="name">
+   </div>
+   <div onclick="show_data()">
+    <button id="btn">submit</button>
+   </div>
+
+</form>
+</body>
+</html>
