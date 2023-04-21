@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Write a program to Show an alert</h3>
+    <p> Click the following button to see the effect </p>
+    <form>
+        <input type="button" value="Click me" onclick="fun();" />
+    </form>
+
+    <script type="text/javascript">
+        function fun() {
+
+
+            alert("This is an alert dialog box");
+        }  
+    </script>
+    <h3>What will be the result for these expressions?</h3>
+    <ol>
+        <li> 5 > 4 → true</li>
+        <li> "apple" > "pineapple" → false</li>
+        <li> "2" > "12" → true</li>
+        <li> undefined == null → true</li>
+        <li> undefined === null → false</li>
+        <li>null == "\n0\n" → false</li>
+        <li>null === +"\n0\n" → false</li>
+    </ol>
+    <p>
+    <ol>
+        <li>Obviously, true.</li>
+        <li>Dictionary comparison, hence false. "a" is smaller than "p". </li>
+        <li>Again, dictionary comparison, first char "2" is greater than the first char "1". </li>
+        <li>Values null and undefined equal each other only. </li>
+        <li>Strict equality is strict. Different types from both sides lead to false.</li>
+        <li> Similar to (4), null only equals undefined. </li>
+        <li>Strict equality of different types.</li>
+    </ol>
+    </p>
+    <h3>will alret be shown if("0") {alert("hello")}</h3>
+    <p> Yes, it will. Any string except an empty one (and "0" is not empty) becomes true in the logical contex</p>
+    <script>
+        "use strict";
+        
+        alert( null || 2 || undefined );
+
+       
+       
+        </script>
+</body>
+
+</html>
